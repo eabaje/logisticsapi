@@ -360,13 +360,3 @@ class Vehicles(models.Model):
         managed = False
         db_table = 'Vehicles'
 
-
-class Roles(models.Model):
-    roleid = models.UUIDField(db_column='RoleId', primary_key=True)  # Field name made lowercase.
-    name = models.CharField(max_length=255, blank=True, null=True)
-    createdat = models.DateTimeField(db_column='createdAt')  # Field name made lowercase.
-    updatedat = models.DateTimeField(db_column='updatedAt')  # Field name made lowercase.
-
-    class Meta:
-        managed = False
-        db_table = 'roles'
